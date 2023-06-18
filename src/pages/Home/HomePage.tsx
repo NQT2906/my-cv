@@ -1,5 +1,6 @@
 import MyAvatar from "@assets/images/Avatar.jpg";
 import ProgressBar from "@components/ProgressBar/ProgressBar";
+import { Image } from "antd";
 import moment from "moment";
 import { Fragment } from "react";
 import {
@@ -24,10 +25,9 @@ import {
   WorkExperienceWrapper,
 } from "./HomePageStyled";
 import { useHomePage } from "./useHomePage";
-import { Button } from "antd";
 
 const HomePage = () => {
-  const { state, handler } = useHomePage();
+  const { state } = useHomePage();
 
   return (
     <HomeContainer>
@@ -115,11 +115,48 @@ const HomePage = () => {
                   overlayClassName="skillPercent"
                   percent={skill.percent}
                 />
-                {/* <ProgressCustom /> */}
               </SkillsWrapper>
             );
           })}
         </ListSkillsWrapper>
+      </WorkExperienceWrapper>
+
+      <WorkExperienceWrapper>
+        <WorkExperienceHeader>Certificates</WorkExperienceHeader>
+        <ListProjectWrapper>
+          {state.LIST_CERTIFICATES.map((project, index) => {
+            return (
+              <Fragment key={index}>
+                <ProjectWrapper width={state.width}>
+                  <TimeWrapper width={state.width}>
+                    {`${moment(project?.achieveTime).format("MM/YYYY")} ${
+                      project?.expireTime
+                        ? `~ ${moment(project?.expireTime).format("MM/YYYY")}`
+                        : ""
+                    }`}
+                  </TimeWrapper>
+
+                  <ProjectContentWrapper className="certInfoWrapper">
+                    <div className="projectName">
+                      {`${project?.name}`} (
+                      <a
+                        href={project?.source}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="certLink"
+                      >
+                        Direct to Cert
+                      </a>
+                      )
+                    </div>
+                    <Image src={project?.imageUrl} width={200} height={200} />
+                  </ProjectContentWrapper>
+                </ProjectWrapper>
+                {state.width < 750 && <CustomDivider />}
+              </Fragment>
+            );
+          })}
+        </ListProjectWrapper>
       </WorkExperienceWrapper>
 
       <WorkExperienceWrapper>
@@ -147,14 +184,14 @@ const HomePage = () => {
         </ListProjectWrapper>
       </WorkExperienceWrapper>
 
-      <Button
+      {/* <Button
         type="primary"
         onClick={() => {
           handler.navigate("/test");
         }}
       >
         Contact me now
-      </Button>
+      </Button> */}
     </HomeContainer>
   );
 };

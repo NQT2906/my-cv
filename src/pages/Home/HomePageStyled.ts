@@ -130,16 +130,26 @@ export const ProjectWrapper = styled.div<{ width: number }>`
 
   margin-left: -20px;
   margin-top: 15px;
+
+  & > .certInfoWrapper {
+    .projectName {
+      margin-bottom: 5px;
+
+      .certLink {
+        color: var(--color-font-grey);
+      }
+    }
+  }
 `;
 
 export const TimeWrapper = styled.div<{ width: number }>`
   display: flex;
   flex-direction: row;
+  width: ${(props) => (props.width < 750 ? "100%" : "250px")};
 
   margin-left: 20px;
   white-space: nowrap;
   margin-top: 4px;
-
   margin-bottom: ${(props) => (props.width < 750 ? "10px" : "0")};
 `;
 
@@ -202,12 +212,4 @@ export const SkillsWrapper = styled.div<{ width: number }>`
   & > .skillPercent {
     margin-bottom: 10px;
   }
-`;
-
-export const ProgressCustom = styled.div`
-  margin-left: 10px;
-  height: 10px !important;
-  width: 200px;
-
-  background-color: var(--background-main-layout);
 `;

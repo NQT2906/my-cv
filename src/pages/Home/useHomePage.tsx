@@ -1,13 +1,16 @@
 import {
   FacebookOutlined,
-  LinkedinOutlined,
   GithubOutlined,
+  LinkedinOutlined,
 } from "@ant-design/icons";
+import AI900 from "@assets/images/AI900.png";
+import JavaScriptAlgoAndStructures from "@assets/images/JavaScriptAlgoAndStructures.png";
+import ResponsiveWebCert from "@assets/images/ResponsiveWeb.png";
 import classNames from "classnames";
 import moment from "moment";
 import { useState } from "react";
-import { useWindowSize } from "../../helpers/useWindowSize";
 import { useNavigate } from "react-router-dom";
+import { useWindowSize } from "../../helpers/useWindowSize";
 
 const CONSTANTS = {
   STICKY_CLASS: "sticky-information",
@@ -160,6 +163,33 @@ const LIST_EDUCATION = [
   },
 ];
 
+const LIST_CERTIFICATES = [
+  {
+    name: "AI900",
+    imageUrl: AI900,
+    source:
+      "https://learn.microsoft.com/en-us/users/nguyenquangthuan-2232/certifications/certification-details/certification.azure-ai-fundamentals",
+    achieveTime: "01-12-2023",
+    expireTime: "01-12-2023",
+  },
+  {
+    name: "JavaScript Algorithms and Data Structures",
+    imageUrl: JavaScriptAlgoAndStructures,
+    source:
+      "https://freecodecamp.org/certification/thuan2k/javascript-algorithms-and-data-structures",
+    achieveTime: "08-21-2021",
+    expireTime: null,
+  },
+  {
+    name: "Responsive Web Design",
+    imageUrl: ResponsiveWebCert,
+    source:
+      "https://freecodecamp.org/certification/thuan2k/responsive-web-design",
+    achieveTime: "07-12-2021",
+    expireTime: null,
+  },
+];
+
 export const useHomePage = () => {
   const [isScrollDown, setIsScrollDown] = useState(false);
   const { width, height } = useWindowSize();
@@ -193,6 +223,7 @@ export const useHomePage = () => {
     LIST_PROJECTS,
     LIST_EDUCATION,
     LIST_SKILLS,
+    LIST_CERTIFICATES,
     width,
     height,
   };
