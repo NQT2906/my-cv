@@ -72,6 +72,7 @@ const LIST_PROJECTS = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci eius libero, sequi nihil ex ratione nobis quis? Deserunt accusamus modi illum fuga possimus veniam vero aspernatur mollitia? Corrupti quisquam sequi itaque similique, soluta deleniti eius enim dicta repellat voluptas, laborum dolor eaque fuga? Aut vitae explicabo expedita totam, nam nisi.",
     timeFrom: "03-15-2023",
     timeTo: moment(),
+    people: "Over 20 peoples",
   },
   {
     name: "Travel booking tour management",
@@ -81,6 +82,7 @@ const LIST_PROJECTS = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci eius libero, sequi nihil ex ratione nobis quis? Deserunt accusamus modi illum fuga possimus veniam vero aspernatur mollitia? Corrupti quisquam sequi itaque similique, soluta deleniti eius enim dicta repellat voluptas, laborum dolor eaque fuga? Aut vitae explicabo expedita totam, nam nisi.",
     timeFrom: "08-15-2022",
     timeTo: "12-15-2022",
+    people: "Over 200 peoples",
   },
   {
     name: "Human Resources Management",
@@ -90,6 +92,7 @@ const LIST_PROJECTS = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci eius libero, sequi nihil ex ratione nobis quis? Deserunt accusamus modi illum fuga possimus veniam vero aspernatur mollitia? Corrupti quisquam sequi itaque similique, soluta deleniti eius enim dicta repellat voluptas, laborum dolor eaque fuga? Aut vitae explicabo expedita totam, nam nisi.",
     timeFrom: "01-15-2023",
     timeTo: "03-15-2023",
+    people: "Over 10 peoples",
   },
   {
     name: "E-Commerce",
@@ -99,6 +102,7 @@ const LIST_PROJECTS = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci eius libero, sequi nihil ex ratione nobis quis? Deserunt accusamus modi illum fuga possimus veniam vero aspernatur mollitia? Corrupti quisquam sequi itaque similique, soluta deleniti eius enim dicta repellat voluptas, laborum dolor eaque fuga? Aut vitae explicabo expedita totam, nam nisi.",
     timeFrom: "07-01-2022",
     timeTo: "08-15-2022",
+    people: "Over 10 peoples",
   },
   {
     name: "Cursus",
@@ -108,6 +112,17 @@ const LIST_PROJECTS = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci eius libero, sequi nihil ex ratione nobis quis? Deserunt accusamus modi illum fuga possimus veniam vero aspernatur mollitia? Corrupti quisquam sequi itaque similique, soluta deleniti eius enim dicta repellat voluptas, laborum dolor eaque fuga? Aut vitae explicabo expedita totam, nam nisi.",
     timeFrom: "04-15-2022",
     timeTo: "07-01-2022",
+    people: "5 peoples",
+  },
+  {
+    name: "SVHCM",
+    customer: "Vietnamese",
+    role: "Front-End Developer",
+    overview:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci eius libero, sequi nihil ex ratione nobis quis? Deserunt accusamus modi illum fuga possimus veniam vero aspernatur mollitia? Corrupti quisquam sequi itaque similique, soluta deleniti eius enim dicta repellat voluptas, laborum dolor eaque fuga? Aut vitae explicabo expedita totam, nam nisi.",
+    timeFrom: "08-01-2019",
+    timeTo: "12-01-2021",
+    people: "5 peoples",
   },
 ];
 
@@ -142,7 +157,7 @@ const LIST_SKILLS = [
   },
   {
     name: "Git",
-    percent: 80,
+    percent: 85,
   },
 ];
 
@@ -152,6 +167,7 @@ const LIST_EDUCATION = [
     role: "Software Developer",
     timeFrom: "03-15-2022",
     timeTo: moment(),
+    additional: "",
   },
   {
     name: "University of Information Technology - VNUHCM",
@@ -160,6 +176,7 @@ const LIST_EDUCATION = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci eius libero, sequi nihil ex ratione nobis quis? Deserunt accusamus modi illum fuga possimus veniam vero aspernatur mollitia? Corrupti quisquam sequi itaque similique, soluta deleniti eius enim dicta repellat voluptas, laborum dolor eaque fuga? Aut vitae explicabo expedita totam, nam nisi.",
     timeFrom: "08-15-2018",
     timeTo: "08-15-2022",
+    additional: "GPA: 8.27/10",
   },
 ];
 

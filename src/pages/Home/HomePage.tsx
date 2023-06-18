@@ -92,7 +92,7 @@ const HomePage = () => {
                   </TimeWrapper>
 
                   <ProjectContentWrapper>
-                    <div className="projectName">{`${project?.name} (${project?.customer})`}</div>
+                    <div className="projectName">{`${project?.name} (${project?.customer}) - ${project?.people}`}</div>
                     <div className="projectRole">{project?.role}</div>
                     <span>{project?.overview}</span>
                   </ProjectContentWrapper>
@@ -175,6 +175,9 @@ const HomePage = () => {
                   <ProjectContentWrapper>
                     <div className="projectName">{`${project?.name}`}</div>
                     <div className="projectRole">{project?.role}</div>
+                    <div className="careerAdditional">
+                      {project?.additional}
+                    </div>
                   </ProjectContentWrapper>
                 </ProjectWrapper>
                 {state.width < 750 && <CustomDivider />}

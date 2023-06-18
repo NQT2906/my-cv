@@ -174,6 +174,15 @@ export const ProjectContentWrapper = styled.div`
 
     margin-bottom: 10px;
   }
+
+  & > .careerAdditional {
+    color: var(--color-font-grey);
+    font-size: 16px;
+    font-weight: 400;
+
+    margin-top: -10px;
+    margin-bottom: 10px;
+  }
 `;
 
 export const CustomDivider = styled(Divider)`
