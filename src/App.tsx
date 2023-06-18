@@ -1,25 +1,14 @@
-import React from "react";
-import logo from "./logo.svg";
+import { BrowserRouter } from "react-router-dom";
 import "./App.css";
+import MainLayout from "./layouts/MainLayout/MainLayout";
+import { renderRoutes } from "./routes";
+import { publicRoutes } from "./routes/routePath.config";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React test
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <MainLayout>{renderRoutes(publicRoutes)}</MainLayout>
+    </BrowserRouter>
   );
 }
 
