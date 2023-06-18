@@ -19,7 +19,10 @@ code {
 
   /* Font color */
   --color-font-dark: #1b0a00;
+  --color-font-soft-dark: #6b6a70;
   --color-font-light: #c0bfc4;
+  --color-font-soft-light: #aeadb1;
+  --color-font-grey: #b3b0bb;
 
   /* Custom color */
   --custom-yellow: #fecb01;

@@ -1,25 +1,47 @@
+import MyAvatar from "@assets/images/Avatar.jpg";
+import ProgressBar from "@components/ProgressBar/ProgressBar";
+import moment from "moment";
+import { Fragment } from "react";
 import {
   AvatarContainer,
+  AvatarCustom,
+  ContentWrapper,
+  CustomDivider,
   HomeContainer,
   InformationContainer,
   InformationSection,
   InformationWrapper,
-  RowInformation,
-  SocialNetworkWrapper,
   LabelWrapper,
-  ContentWrapper,
+  ListProjectWrapper,
+  ListSkillsWrapper,
+  ProjectContentWrapper,
+  ProjectWrapper,
+  RowInformation,
+  SkillsWrapper,
+  SocialNetworkWrapper,
+  TimeWrapper,
+  WorkExperienceHeader,
+  WorkExperienceWrapper,
 } from "./HomePageStyled";
 import { useHomePage } from "./useHomePage";
+import { Button } from "antd";
 
 const HomePage = () => {
-  const { state } = useHomePage();
+  const { state, handler } = useHomePage();
 
   return (
     <HomeContainer>
       <InformationSection>
         <InformationWrapper id="avatarId" width={state.width}>
-          <AvatarContainer />
-          <InformationContainer>
+          <AvatarContainer>
+            <AvatarCustom
+              src={MyAvatar}
+              preview={false}
+              width={150}
+              height={150}
+            />
+          </AvatarContainer>
+          <InformationContainer className="information-container">
             {Object.keys(state.MASTER_DATA).map(
               (key: string, index: number) => {
                 return (
@@ -55,19 +77,84 @@ const HomePage = () => {
           </InformationContainer>
         </InformationWrapper>
       </InformationSection>
-      {Array(100)
-        .fill(0)
-        .map((_, index) => {
-          return (
-            <div key={index}>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum,
-              nostrum?
-            </div>
-          );
-        })}
-      <div>Experience</div>
-      <div>Education</div>
-      <div>Skills</div>
+
+      <WorkExperienceWrapper>
+        <WorkExperienceHeader>Work Experience</WorkExperienceHeader>
+        <ListProjectWrapper>
+          {state.LIST_PROJECTS.map((project, index) => {
+            return (
+              <Fragment key={index}>
+                <ProjectWrapper width={state.width}>
+                  <TimeWrapper width={state.width}>
+                    {`${moment(project?.timeFrom).format("MM/YYYY")} ~ ${moment(
+                      project?.timeTo
+                    ).format("MM/YYYY")}`}
+                  </TimeWrapper>
+
+                  <ProjectContentWrapper>
+                    <div className="projectName">{`${project?.name} (${project?.customer})`}</div>
+                    <div className="projectRole">{project?.role}</div>
+                    <span>{project?.overview}</span>
+                  </ProjectContentWrapper>
+                </ProjectWrapper>
+                {state.width < 750 && <CustomDivider />}
+              </Fragment>
+            );
+          })}
+        </ListProjectWrapper>
+      </WorkExperienceWrapper>
+
+      <WorkExperienceWrapper>
+        <WorkExperienceHeader>Skills</WorkExperienceHeader>
+        <ListSkillsWrapper>
+          {state.LIST_SKILLS.map((skill, index) => {
+            return (
+              <SkillsWrapper key={index} width={state.width}>
+                <div className="skillName">{skill.name}</div>
+                <ProgressBar
+                  overlayClassName="skillPercent"
+                  percent={skill.percent}
+                />
+                {/* <ProgressCustom /> */}
+              </SkillsWrapper>
+            );
+          })}
+        </ListSkillsWrapper>
+      </WorkExperienceWrapper>
+
+      <WorkExperienceWrapper>
+        <WorkExperienceHeader>Education And job Career</WorkExperienceHeader>
+        <ListProjectWrapper>
+          {state.LIST_EDUCATION.map((project, index) => {
+            return (
+              <Fragment key={index}>
+                <ProjectWrapper width={state.width}>
+                  <TimeWrapper width={state.width}>
+                    {`${moment(project?.timeFrom).format("MM/YYYY")} ~ ${moment(
+                      project?.timeTo
+                    ).format("MM/YYYY")}`}
+                  </TimeWrapper>
+
+                  <ProjectContentWrapper>
+                    <div className="projectName">{`${project?.name}`}</div>
+                    <div className="projectRole">{project?.role}</div>
+                  </ProjectContentWrapper>
+                </ProjectWrapper>
+                {state.width < 750 && <CustomDivider />}
+              </Fragment>
+            );
+          })}
+        </ListProjectWrapper>
+      </WorkExperienceWrapper>
+
+      <Button
+        type="primary"
+        onClick={() => {
+          handler.navigate("/test");
+        }}
+      >
+        Contact me now
+      </Button>
     </HomeContainer>
   );
 };

@@ -1,7 +1,7 @@
 import { Suspense } from "react";
 import { Route, Routes } from "react-router-dom";
 import PermissionRoute from "./PermissionRoute";
-import { LoadingPage } from "../pages/Loading/LoadingPage";
+import { LoadingPage } from "@pages/Loading/LoadingPage";
 
 type RouteType = {
   id: string;

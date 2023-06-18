@@ -12,9 +12,29 @@
     "module": "esnext",
     "moduleResolution": "node",
     "resolveJsonModule": true,
-    "isolatedModules": false,
+    "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "baseUrl": "src",
+    "paths": {
+      "@assets": ["assets"],
+      "@assets/*": ["assets/*"],
+
+      "@components": ["components"],
+      "@components/*": ["components/*"],
+
+      "@helpers": ["helpers"],
+      "@helpers/*": ["helpers/*"],
+
+      "@layouts": ["layouts"],
+      "@layouts/*": ["layouts/*"],
+
+      "@pages": ["pages"],
+      "@pages/*": ["pages/*"],
+
+      "@routes": ["routes"],
+      "@routes/*": ["routes/*"]
+    }
   },
   "include": ["src"]
 }
