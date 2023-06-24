@@ -64,12 +64,6 @@ const HomePage = () => {
                         </SocialNetworkWrapper>
                       )}
                     </ContentWrapper>
-
-                    {/* if (!key?.includes("network")) {
-                 return <span>{`${key}: ${state.MASTER_DATA[key]}`}</span>;
-               } else {
-                 return <span>asddas</span>;
-               } */}
                   </RowInformation>
                 );
               }

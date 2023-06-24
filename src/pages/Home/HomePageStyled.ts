@@ -99,6 +99,10 @@ export const SocialNetworkWrapper = styled.div`
   margin-left: -10px;
   & > span {
     margin-left: 10px;
+
+    &:hover {
+      color: var(--custom-yellow);
+    }
   }
 `;
 
