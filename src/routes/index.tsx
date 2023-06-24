@@ -33,7 +33,7 @@ export function renderRoutes(routes: RouteType[] = []) {
         {routes.map((route) => {
           return renderRoute(route);
         })}
-        <Route
+        {/* <Route
           path="*"
           element={
             <Navigate
@@ -42,7 +42,7 @@ export function renderRoutes(routes: RouteType[] = []) {
               }}
             />
           }
-        />
+        /> */}
       </Routes>
     </Suspense>
   );
