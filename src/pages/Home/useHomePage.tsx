@@ -72,7 +72,7 @@ const LIST_PROJECTS = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci eius libero, sequi nihil ex ratione nobis quis? Deserunt accusamus modi illum fuga possimus veniam vero aspernatur mollitia? Corrupti quisquam sequi itaque similique, soluta deleniti eius enim dicta repellat voluptas, laborum dolor eaque fuga? Aut vitae explicabo expedita totam, nam nisi.",
     timeFrom: "03-15-2023",
     timeTo: moment(),
-    people: "Over 20 peoples",
+    people: "Over 20 people",
   },
   {
     name: "Travel booking tour management",
@@ -82,7 +82,7 @@ const LIST_PROJECTS = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci eius libero, sequi nihil ex ratione nobis quis? Deserunt accusamus modi illum fuga possimus veniam vero aspernatur mollitia? Corrupti quisquam sequi itaque similique, soluta deleniti eius enim dicta repellat voluptas, laborum dolor eaque fuga? Aut vitae explicabo expedita totam, nam nisi.",
     timeFrom: "08-15-2022",
     timeTo: "12-15-2022",
-    people: "Over 200 peoples",
+    people: "Over 200 people",
   },
   {
     name: "Human Resources Management",
@@ -92,7 +92,7 @@ const LIST_PROJECTS = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci eius libero, sequi nihil ex ratione nobis quis? Deserunt accusamus modi illum fuga possimus veniam vero aspernatur mollitia? Corrupti quisquam sequi itaque similique, soluta deleniti eius enim dicta repellat voluptas, laborum dolor eaque fuga? Aut vitae explicabo expedita totam, nam nisi.",
     timeFrom: "01-15-2023",
     timeTo: "03-15-2023",
-    people: "Over 10 peoples",
+    people: "Over 10 people",
   },
   {
     name: "E-Commerce",
@@ -102,7 +102,7 @@ const LIST_PROJECTS = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci eius libero, sequi nihil ex ratione nobis quis? Deserunt accusamus modi illum fuga possimus veniam vero aspernatur mollitia? Corrupti quisquam sequi itaque similique, soluta deleniti eius enim dicta repellat voluptas, laborum dolor eaque fuga? Aut vitae explicabo expedita totam, nam nisi.",
     timeFrom: "07-01-2022",
     timeTo: "08-15-2022",
-    people: "Over 10 peoples",
+    people: "Over 10 people",
   },
   {
     name: "Cursus",
@@ -112,7 +112,7 @@ const LIST_PROJECTS = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci eius libero, sequi nihil ex ratione nobis quis? Deserunt accusamus modi illum fuga possimus veniam vero aspernatur mollitia? Corrupti quisquam sequi itaque similique, soluta deleniti eius enim dicta repellat voluptas, laborum dolor eaque fuga? Aut vitae explicabo expedita totam, nam nisi.",
     timeFrom: "04-15-2022",
     timeTo: "07-01-2022",
-    people: "5 peoples",
+    people: "5 people",
   },
   {
     name: "SVHCM",
@@ -122,7 +122,7 @@ const LIST_PROJECTS = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci eius libero, sequi nihil ex ratione nobis quis? Deserunt accusamus modi illum fuga possimus veniam vero aspernatur mollitia? Corrupti quisquam sequi itaque similique, soluta deleniti eius enim dicta repellat voluptas, laborum dolor eaque fuga? Aut vitae explicabo expedita totam, nam nisi.",
     timeFrom: "08-01-2019",
     timeTo: "12-01-2021",
-    people: "5 peoples",
+    people: "5 people",
   },
 ];
 
@@ -187,7 +187,7 @@ const LIST_CERTIFICATES = [
     source:
       "https://learn.microsoft.com/en-us/users/nguyenquangthuan-2232/certifications/certification-details/certification.azure-ai-fundamentals",
     achieveTime: "01-12-2023",
-    expireTime: "01-12-2023",
+    expireTime: null,
   },
   {
     name: "JavaScript Algorithms and Data Structures",

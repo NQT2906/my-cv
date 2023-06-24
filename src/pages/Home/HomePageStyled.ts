@@ -86,6 +86,12 @@ export const ContentWrapper = styled.div`
   & > a {
     text-decoration: none;
     color: var(--color-font-light);
+
+    &:hover {
+      text-decoration: underline !important;
+      text-decoration-color: var(--custom-yellow) !important;
+      color: var(--custom-yellow) !important;
+    }
   }
 `;
 
