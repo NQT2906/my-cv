@@ -1,7 +1,7 @@
-import { Suspense } from "react";
-import { Route, Routes } from "react-router-dom";
-import PermissionRoute from "./PermissionRoute";
 import { LoadingPage } from "@pages/Loading/LoadingPage";
+import { Suspense } from "react";
+import { Navigate, Route, Routes } from "react-router-dom";
+import PermissionRoute from "./PermissionRoute";
 
 type RouteType = {
   id: string;
@@ -33,6 +33,16 @@ export function renderRoutes(routes: RouteType[] = []) {
         {routes.map((route) => {
           return renderRoute(route);
         })}
+        <Route
+          path="*"
+          element={
+            <Navigate
+              to={{
+                pathname: "/my-cv",
+              }}
+            />
+          }
+        />
       </Routes>
     </Suspense>
   );

@@ -7,8 +7,8 @@ export const publicRoutes = [
     component: lazy(() => import("../pages/Home/HomePage")),
   },
   {
-    id: "home",
-    path: "/home",
+    id: "sub-home",
+    path: "/my-cv",
     component: lazy(() => import("../pages/Home/HomePage")),
   },
   {
