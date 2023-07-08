@@ -1,6 +1,6 @@
 import { LoadingPage } from "@pages/Loading/LoadingPage";
 import { Suspense } from "react";
-import { Navigate, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import PermissionRoute from "./PermissionRoute";
 
 type RouteType = {

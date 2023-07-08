@@ -1,7 +1,6 @@
 import MyAvatar from "@assets/images/Avatar.jpg";
 import ProgressBar from "@components/ProgressBar/ProgressBar";
 import { Image } from "antd";
-import moment from "moment";
 import { Fragment } from "react";
 import {
   AvatarContainer,
@@ -80,9 +79,7 @@ const HomePage = () => {
               <Fragment key={index}>
                 <ProjectWrapper width={state.width}>
                   <TimeWrapper width={state.width}>
-                    {`${moment(project?.timeFrom).format("MM/YYYY")} ~ ${moment(
-                      project?.timeTo
-                    ).format("MM/YYYY")}`}
+                    {`${project?.timeFrom} ~ ${project?.timeTo}`}
                   </TimeWrapper>
 
                   <ProjectContentWrapper>
@@ -123,10 +120,8 @@ const HomePage = () => {
               <Fragment key={index}>
                 <ProjectWrapper width={state.width}>
                   <TimeWrapper width={state.width}>
-                    {`${moment(project?.achieveTime).format("MM/YYYY")} ${
-                      project?.expireTime
-                        ? `~ ${moment(project?.expireTime).format("MM/YYYY")}`
-                        : ""
+                    {`${project?.achieveTime} ${
+                      project?.expireTime ? `~ ${project?.expireTime}` : ""
                     }`}
                   </TimeWrapper>
 
@@ -161,9 +156,7 @@ const HomePage = () => {
               <Fragment key={index}>
                 <ProjectWrapper width={state.width}>
                   <TimeWrapper width={state.width}>
-                    {`${moment(project?.timeFrom).format("MM/YYYY")} ~ ${moment(
-                      project?.timeTo
-                    ).format("MM/YYYY")}`}
+                    {`${project?.timeFrom} ~ ${project?.timeTo}`}
                   </TimeWrapper>
 
                   <ProjectContentWrapper>

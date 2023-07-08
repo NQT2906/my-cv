@@ -7,7 +7,6 @@ import AI900 from "@assets/images/AI900.png";
 import JavaScriptAlgoAndStructures from "@assets/images/JavaScriptAlgoAndStructures.png";
 import ResponsiveWebCert from "@assets/images/ResponsiveWeb.png";
 import classNames from "classnames";
-import moment from "moment";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useWindowSize } from "../../helpers/useWindowSize";
@@ -70,8 +69,8 @@ const LIST_PROJECTS = [
     role: "Front-End Developer",
     overview:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci eius libero, sequi nihil ex ratione nobis quis? Deserunt accusamus modi illum fuga possimus veniam vero aspernatur mollitia? Corrupti quisquam sequi itaque similique, soluta deleniti eius enim dicta repellat voluptas, laborum dolor eaque fuga? Aut vitae explicabo expedita totam, nam nisi.",
-    timeFrom: "03-15-2023",
-    timeTo: moment(),
+    timeFrom: "03/2023",
+    timeTo: "Now",
     people: "Over 20 people",
   },
   {
@@ -80,8 +79,8 @@ const LIST_PROJECTS = [
     role: "Front-End Developer",
     overview:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci eius libero, sequi nihil ex ratione nobis quis? Deserunt accusamus modi illum fuga possimus veniam vero aspernatur mollitia? Corrupti quisquam sequi itaque similique, soluta deleniti eius enim dicta repellat voluptas, laborum dolor eaque fuga? Aut vitae explicabo expedita totam, nam nisi.",
-    timeFrom: "08-15-2022",
-    timeTo: "12-15-2022",
+    timeFrom: "08/2022",
+    timeTo: "12/2022",
     people: "Over 200 people",
   },
   {
@@ -90,8 +89,8 @@ const LIST_PROJECTS = [
     role: "Full-Stack Developer",
     overview:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci eius libero, sequi nihil ex ratione nobis quis? Deserunt accusamus modi illum fuga possimus veniam vero aspernatur mollitia? Corrupti quisquam sequi itaque similique, soluta deleniti eius enim dicta repellat voluptas, laborum dolor eaque fuga? Aut vitae explicabo expedita totam, nam nisi.",
-    timeFrom: "01-15-2023",
-    timeTo: "03-15-2023",
+    timeFrom: "01/2023",
+    timeTo: "03/2023",
     people: "Over 10 people",
   },
   {
@@ -100,8 +99,8 @@ const LIST_PROJECTS = [
     role: "Front-End Developer",
     overview:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci eius libero, sequi nihil ex ratione nobis quis? Deserunt accusamus modi illum fuga possimus veniam vero aspernatur mollitia? Corrupti quisquam sequi itaque similique, soluta deleniti eius enim dicta repellat voluptas, laborum dolor eaque fuga? Aut vitae explicabo expedita totam, nam nisi.",
-    timeFrom: "07-01-2022",
-    timeTo: "08-15-2022",
+    timeFrom: "07/2022",
+    timeTo: "08/2022",
     people: "Over 10 people",
   },
   {
@@ -110,8 +109,8 @@ const LIST_PROJECTS = [
     role: "Front-End Developer",
     overview:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci eius libero, sequi nihil ex ratione nobis quis? Deserunt accusamus modi illum fuga possimus veniam vero aspernatur mollitia? Corrupti quisquam sequi itaque similique, soluta deleniti eius enim dicta repellat voluptas, laborum dolor eaque fuga? Aut vitae explicabo expedita totam, nam nisi.",
-    timeFrom: "04-15-2022",
-    timeTo: "07-01-2022",
+    timeFrom: "04/2022",
+    timeTo: "07/2022",
     people: "5 people",
   },
   {
@@ -120,8 +119,8 @@ const LIST_PROJECTS = [
     role: "Front-End Developer",
     overview:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci eius libero, sequi nihil ex ratione nobis quis? Deserunt accusamus modi illum fuga possimus veniam vero aspernatur mollitia? Corrupti quisquam sequi itaque similique, soluta deleniti eius enim dicta repellat voluptas, laborum dolor eaque fuga? Aut vitae explicabo expedita totam, nam nisi.",
-    timeFrom: "08-01-2019",
-    timeTo: "12-01-2021",
+    timeFrom: "08/2019",
+    timeTo: "12/2021",
     people: "5 people",
   },
 ];
@@ -165,8 +164,8 @@ const LIST_EDUCATION = [
   {
     name: "FPT Software",
     role: "Software Developer",
-    timeFrom: "03-15-2022",
-    timeTo: moment(),
+    timeFrom: "03/2022",
+    timeTo: "Now",
     additional: "",
   },
   {
@@ -174,8 +173,8 @@ const LIST_EDUCATION = [
     role: "Data Science",
     overview:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci eius libero, sequi nihil ex ratione nobis quis? Deserunt accusamus modi illum fuga possimus veniam vero aspernatur mollitia? Corrupti quisquam sequi itaque similique, soluta deleniti eius enim dicta repellat voluptas, laborum dolor eaque fuga? Aut vitae explicabo expedita totam, nam nisi.",
-    timeFrom: "08-15-2018",
-    timeTo: "08-15-2022",
+    timeFrom: "08/2018",
+    timeTo: "08/2022",
     additional: "GPA: 8.27/10",
   },
 ];
@@ -186,7 +185,7 @@ const LIST_CERTIFICATES = [
     imageUrl: AI900,
     source:
       "https://learn.microsoft.com/en-us/users/nguyenquangthuan-2232/certifications/certification-details/certification.azure-ai-fundamentals",
-    achieveTime: "01-12-2023",
+    achieveTime: "01/2023",
     expireTime: null,
   },
   {
@@ -194,7 +193,7 @@ const LIST_CERTIFICATES = [
     imageUrl: JavaScriptAlgoAndStructures,
     source:
       "https://freecodecamp.org/certification/thuan2k/javascript-algorithms-and-data-structures",
-    achieveTime: "08-21-2021",
+    achieveTime: "08/2021",
     expireTime: null,
   },
   {
@@ -202,7 +201,7 @@ const LIST_CERTIFICATES = [
     imageUrl: ResponsiveWebCert,
     source:
       "https://freecodecamp.org/certification/thuan2k/responsive-web-design",
-    achieveTime: "07-12-2021",
+    achieveTime: "07/2021",
     expireTime: null,
   },
 ];
