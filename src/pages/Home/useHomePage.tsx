@@ -20,7 +20,7 @@ const MASTER_DATA: any = {
   FULL_NAME: { label: "Full name", content: "Nguyen Quang Thuan" },
   BIRTH: {
     label: "Birth",
-    content: `29/06/2000 (${moment().diff("06-29-2000", "years")})`,
+    content: `29/06/2000`,
   },
   PHONE_NUMBER: {
     label: "Phone number",
